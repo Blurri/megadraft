@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+import PropTypes from "prop-types";
 import ReactDOM from "react-dom";
 import {withRouter, hashHistory, Router, Route, IndexRoute, Link} from "react-router";
 import Scroll from "react-scroll";
@@ -199,7 +200,7 @@ class Page extends React.Component {
 }
 
 Page.childContextTypes = {
-  muiTheme: React.PropTypes.object
+  muiTheme: PropTypes.object
 };
 
 ReactDOM.render((

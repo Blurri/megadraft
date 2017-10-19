@@ -4,7 +4,8 @@
  * License: MIT
  */
 
-import React, {Component, PropTypes} from "react";
+import React, {Component} from "react";
+import PropTypes from "prop-types";
 import ReactDOM from "react-dom";
 import classNames from "classnames";
 
@@ -15,8 +16,8 @@ import icons from "../icons";
 export default class Dropdown extends Component {
 
   static propTypes = {
-    items: React.PropTypes.arrayOf(
-      React.PropTypes.shape({
+    items: PropTypes.arrayOf(
+      PropTypes.shape({
         key: PropTypes.string.isRequired,
         icon: PropTypes.func.isRequired,
         label: PropTypes.string.isRequired
